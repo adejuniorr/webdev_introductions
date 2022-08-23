@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site001</title>
+    <link rel="stylesheet" href="site001.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Welcome
+        </h1>
+    </header>
+    <section class="hour">
+        <div id="txt1">
+            texto
+        </div>
+        <div id="divfot">
+
+        </div>
+        <p id="txt2">texto2</p>
+    </section>
+    <section class="age">
+        <div>
+            <strong>Por favor, preencha os dados abaixo</strong><p>
+        </div>
+        <div id="dados">
+            Ano de Nascimento: <input type="number" name="birth" id="anonascimento"><p>
+            Sexo:
+            <input type="radio" name="radsex" id="masc">Masculino
+            <input type="radio" name="radsex" id="femi">Feminino<p>
+            Raça:
+            <input type="radio" name="race" id="negra">Negra
+            <input type="radio" name="race" id="branca">Branca
+            <input type="radio" name="race" id="asiática">Asiática<p>
+            <input type="button" value="Confirmar" id="confirmar" onclick="confirmar()">
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <section class="calc">
+        <div id="fundo">
+            <div class="main">
+                <form action="" name="Calculadora"> <!--Aqui abrimos um formulário para receber 
+                                                    os recursos que irão compor a calculadora-->
+
+                    <!--Todos os botões configurados neste campo partiram de um modelo fixo inicial:
+
+                    <input type="button" class="" name="" value="" onclick="displaynum(.value)"
+
+                    Posteriormente sofreram alterações para atender ao objetivo final da construção
+                    do programa-->
+
+                    <!--O campo de 'Resultado' e o botão 'C' foram configurados como pode ser visto
+                    abaixo-->
+
+                    <input type="text" class="text maincolor" name="text1" disabled>
+                    <input type="text" class="text1 maincolor" id="c" name="text12" value="C" onclick="location.reload()"><br>
+
+                    <!--Os outros 12 botões componentes foram montados no esquema a seguir-->
+
+                    <input type="button" class="num maincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">
+                    <input type="button" class="num maincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                    <input type="button" class="num maincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">
+                    <input type="button" class="num mais" id="mais" name="maisbtn" value="+" onclick="displaynum(maisbtn.value)"><br>
+
+                    <input type="button" class="num maincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                    <input type="button" class="num maincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                    <input type="button" class="num maincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                    <input type="button" class="num menos" id="menos" name="menosbtn" value="-" onclick="displaynum(menosbtn.value)"><br>
+
+                    <input type="button" class="num maincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                    <input type="button" class="num maincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                    <input type="button" class="num maincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                    <input type="button" class="num multi" id="multi" name="multibtn" value="*" onclick="displaynum(multibtn.value)"><br>
+
+                    <input type="button" class="num maincolor" name="btndeci" value="." onclick="displaynum(btndeci.value)">
+                    <input type="button" class="num maincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                    <input type="button" class="num igual" id="igual" name="btnigual" value="=" onclick="text1.value=eval(text1.value)">
+                    <input type="button" class="num divi" id="divi" name="divibtn" value="/" onclick="displaynum(divibtn.value)"><br>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="horadodia.js"></script>
+    <script src="dadosdovisitando.js"></script>
+    <script src="calculadora.js"></script>
+</body>
+</html>
